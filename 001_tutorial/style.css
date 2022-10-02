@@ -1,0 +1,15 @@
+.test li{
+    display: inline !important;
+    margin: 10px;
+    text-decoration: underline;
+    cursor: pointer; 
+}
+
+.test li:first-child{
+    margin-left: 0px;
+}
+
+ul{
+    width: 50%;
+    padding: 0px;
+}

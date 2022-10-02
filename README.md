@@ -1,1 +1,32 @@
-# javascritp_self_learn
+# asycn / defer
+asycn / defer is useful when the javascript file inside the head
+
+by default browser will render the webpage line by line, so if the js file inside the head browser will load the html file and stop load when encounter the js file and executed the file then continue load the html file
+        
+Because that, sometime the browser will throw exception when inside the js file want to call element which in the html, however at that moment html file hasn't load funish so the element might exist
+
+## There are few way to solve the promble
+
+1. Put the JS file at the bottom of the body section (Not recommendation) 
+
+2. Use the keyword async, but it work like paralle with html. once encounter the JS file it will keep loading the html as well as js file, once the js file is loaded, then html file will stop and execuate the js file, then continus load the html file
+
+3. Use the keyword defer, it will work like async, but it will execuate the JS file when html is loaded completely
+
+4. Set type="module" is becuaes both of the file may interacting each other, and type "module" is include the feature of the defer keyword
+
+# template literal
+
+- using ` ` instead of "" or ''
+- using ${ js expression } 
+
+Remark: js expression is like book.title, book.page
+
+# tranditional way 
+
+- using + to do concat string with string
+
+# pre-append 
+```html
+  document.querySelector('h1').prepend(nvElement);
+```
